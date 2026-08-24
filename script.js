@@ -122,7 +122,11 @@ for (let i = 0; i < totalPetals; i++) {
   petal.style.fontSize = `${0.9 + Math.random() * 0.9}rem`;
   petalsContainer.appendChild(petal);
 }
-document.addEventListener('click', function() {
+
+document.getElementById('start-btn').addEventListener('click', function() {
   const music = document.getElementById('bg-music');
+  const startScreen = document.getElementById('start-screen');
+
   music.play().catch(error => console.log(error));
-}, { once: true });
+  startScreen.style.display = 'none';
+});
