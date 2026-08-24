@@ -4,9 +4,14 @@ const music = document.getElementById('music');
 const startBtn = document.getElementById('start-btn');
 
 function triggerSurprise() {
-  startScreen.style.display = 'none';
-  mainContent.style.display = 'flex';
-  music.play().catch(error => console.error("Audio playback error:", error));
+  music.play().then(() => {
+    startScreen.style.display = 'none';
+    mainContent.style.display = 'flex';
+  }).catch(error => {
+    console.error(error);
+    startScreen.style.display = 'none';
+    mainContent.style.display = 'flex';
+  });
 }
 
 startScreen.addEventListener('click', triggerSurprise);
