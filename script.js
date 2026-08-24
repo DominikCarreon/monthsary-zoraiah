@@ -129,3 +129,10 @@ document.getElementById('start-btn').addEventListener('click', function() {
   music.play().catch(error => console.log(error));
   startScreen.style.display = 'none';
 });
+
+
+document.getElementById('start-screen').addEventListener('click', function() {
+  document.getElementById('start-screen').style.display = 'none';
+  document.getElementById('main-content').style.display = 'flex';
+  document.getElementById('music').play();
+});
