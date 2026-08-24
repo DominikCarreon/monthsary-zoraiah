@@ -4,42 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Monthsary, My Love Zoraiah</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="start-screen">
-  <div class="flower" style="left: 10%; animation-duration: 5s;">🪷</div>
-  <div class="flower" style="left: 30%; animation-duration: 7s; animation-delay: 1s;">🪷</div>
-  <div class="flower" style="left: 50%; animation-duration: 6s; animation-delay: 2s;">🪷</div>
-  <div class="flower" style="left: 70%; animation-duration: 8s; animation-delay: 0.5s;">🪷</div>
-  <div class="flower" style="left: 90%; animation-duration: 5.5s; animation-delay: 1.5s;">🪷</div>
-  
-  <button id="start-btn">Open Surprise 💌</button>
-</div>
-
-<div class="petals" id="petals"></div>
- 
-<button class="music-toggle" id="musicToggle" aria-label="Toggle music">
-  <span class="music-icon" id="musicIcon">♪</span>
-</button>
-<audio id="bg-music" loop>
-  <source src="src/your-song.mp3" type="audio/mpeg">
-</audio>
- 
-<main class="page">
- 
-  <header class="hero">
-    <p class="eyebrow">A little something for</p>
-    <h1 class="message">My love, Happy monthsary Zoraiah.</h1>
-    <p class="subtext">every month with you feels like the first one</p>
-  </header>
- 
-  <body>
+<!-- The Start Screen -->
 <div id="start-screen">
   <div class="floating-hearts">
     <div class="heart">❤️</div>
@@ -54,7 +25,16 @@
     <button id="start-btn">❤️</button>
   </div>
 </div>
+
+<!-- The Main Content (Hidden until clicked) -->
 <div id="main-content">
+  
+  <header class="hero">
+    <p class="eyebrow">A little something for</p>
+    <h1 class="message">My love, Happy monthsary Zoraiah.</h1>
+    <p class="subtext">every month with you feels like the first one</p>
+  </header>
+
   <div class="heart-grid">
     <div class="text-box">Tap your phone here my love</div>
     <div class="empty"></div>
@@ -101,14 +81,17 @@
     <div class="empty"></div>
     <div class="empty"></div>
   </div>
- 
+
   <section class="closing">
     <p class="closing-line">here's to more months, more memories, more us.</p>
-    <div class="signature">— your little gengar (◣ _ ◢)  </div>
+    <div class="signature">— your little gengar (◣ _ ◢) </div>
   </section>
- 
-</main>
- 
-<script src="script.js"></script>
+
+  <audio id="music" loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+  
+</div>
+
 </body>
 </html>
