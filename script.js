@@ -6,8 +6,7 @@ const startBtn = document.getElementById('start-btn');
 function triggerSurprise() {
   startScreen.style.display = 'none';
   mainContent.style.display = 'flex';
-  music.load();
-  music.play().catch(error => console.log(error));
+  music.play().catch(error => console.error("Audio playback error:", error));
 }
 
 startScreen.addEventListener('click', triggerSurprise);
